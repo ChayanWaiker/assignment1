@@ -1,36 +1,225 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Academics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IET DAVV - Official Website</title>
+    <style>.logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.iet {
+    padding-top: 14px;
+    padding-left: 8px;
+}
+h1,
+h2 {
+    margin: 0 0 15px;
+}
+p {
+    margin: 0 0 10px;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+li {
+    margin: 5px 0;
+}
+/* Header Section */
+header {
+    background-color: #004080;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+header .logo img {
+    height: 60px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+/* Hero Section */
+.hero {
+    background: url('https://ietdavv.edu.in/assets/images/hero-banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green/50;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 1.5rem;
+}
+/* Section Styles */
+.section {
+    padding: 20px 40px;
+}
+.section h2 {
+    color: #004080;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.section ul li {
+    font-size: 1rem;
+}
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .section {
+        padding: 20px;
+    }
+}
+</style>
 </head>
 <body>
-    <h1><u>Academics</u></h1>
-    <p><b>Departments:</b></p>
-    <ul>
-        <li>Arts
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./image.png" alt="IET DAVV Logo">
+            <h1 class="iet">IET DAVV</h1>
+        </div>
+        <nav>
             <ul>
-                <li><a href="english.html">English</a></li>
-                <li><a href="history.html">History</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#branches">Branches</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#library">Modern Library</a></li>
+                <li><a href="#notice">Notice Board</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </li>
-        <li>Science
-            <ul>
-                <li><a href="computer_science.html">Computer Science</a></li>
-                <li><a href="mathematics.html">Mathematics</a></li>
-                <li><a href="physics.html">Physics</a></li>
-                <li><a href="theory_of_computation.html">Theory of Computation</a></li>
-                <li><a href="computer_networks.html">Computer Networks</a></li>
-                <li><a href="software_engineering.html">Software Engineering</a></li>
-                <li><a href="data_mining.html">Data Mining</a></li>
-                <li><a href="artificial_intelligence.html">Artificial Intelligence</a></li>
-            </ul>
-        </li>
-        <li>Commerce
-            <ul>
-                <li><a href="economics.html">Economics</a></li>
-            </ul>
-        </li>
-    </ul>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to IET DAVV</h1>
+            <p>Shaping Future Engineers with Excellence in Education</p>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About IET DAVV</h2>
+        <p>The Institute of Engineering and Technology (IET) at Devi Ahilya Vishwavidyalaya, Indore, is a premier
+            engineering institute established in 1996. The institute offers cutting-edge courses in various engineering
+            disciplines, with a focus on research, innovation, and academic excellence.</p>
+    </section>
+    <!-- Branches Offered -->
+    <section id="branches" class="section">
+        <h2>Branches Offered</h2>
+        <ul>
+            <li>🏗️ Civil Engineering</li>
+            <li>⚙️ Mechanical Engineering</li>
+            <li>🖥️ Computer Engineering</li>
+            <li>⚡ Electrical Engineering</li>
+            <li>📡 Electronics & Communication Engineering</li>
+            <li>🧪 Chemical Engineering</li>
+            <li>🌐 Information Technology</li>
+        </ul>
+    </section>
+    <!-- Facilities Section -->
+    <section id="facilities" class="section">
+        <h2>Facilities</h2>
+        <ul>
+            <li>📚 Well-equipped Library</li>
+            <li>💻 Advanced Computer Labs</li>
+            <li>🏫 Spacious Classrooms</li>
+            <li>⚽ Sports Complex</li>
+            <li>🏠 Hostel Accommodation</li>
+        </ul>
+    </section>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Our Achievements</h2>
+        <ul>
+            <li>🏆 Ranked among top engineering colleges in India</li>
+            <li>🏅 95% Placement Record</li>
+            <li>💡 Students have won multiple hackathons</li>
+        </ul>
+    </section>
+    <!-- Upcoming Events Section -->
+    <section id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>🎤 Tech Symposium - April 15, 2025</li>
+            <li>🏆 Coding Hackathon - May 10, 2025</li>
+            <li>📢 Annual Convocation - June 20, 2025</li>
+        </ul>
+    </section>
+    <!-- Modern Library Section -->
+    <section id="library" class="section">
+        <h2>Modern Library</h2>
+        <p>Our library features a vast collection of books, research papers, and digital resources. Equipped with modern
+            facilities, it provides a quiet and comfortable study environment.</p>
+    </section>
+    <!-- Notice Board Section -->
+    <section id="notice" class="section">
+        <h2>Notice Board</h2>
+        <ul>
+            <li>📌 Semester Exam Schedule Released</li>
+            <li>📌 Placement Drive for Final Year Students</li>
+            <li>📌 Registration Open for Summer Internship Program</li>
+        </ul>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: info@ietdavv.edu.in</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>Address: Khandwa Road, Indore, Madhya Pradesh</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 IET DAVV. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
