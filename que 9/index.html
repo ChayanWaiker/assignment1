@@ -1,1 +1,229 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #004080;
+            border-radius: 4px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Indore Tourism</h1>
+        <p>Explore the Heart of Madhya Pradesh</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="hotel.html">Hotel Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Discover the beauty, history, and charm of Indore</h2>
+        <p>From historical monuments to modern amenities, Indore has it all!</p>
+    </div>
+</body>
+</html>
+// HERITAGE page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Sites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #004080;
+        }
+        .heritage-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .heritage-item {
+            width: 200px;
+            text-align: center;
+        }
+        .heritage-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heritage Sites of Indore</h1>
+    <div class="heritage-list">
+        <div class="heritage-item">
+            <a href="lalbagh.html"><img src="lalbagh.jpg" alt="Lal Bagh Palace"></a>
+            <p>Lal Bagh Palace</p>
+        </div>
+        <div class="heritage-item">
+            <a href="rajwada.html"><img src="rajwada.jpg" alt="Rajwada"></a>
+            <p>Rajwada</p>
+        </div>
+        <!-- Add more heritage sites here -->
+    </div>
+</body>
+</html>
+// HOTEL Booking page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hotel Booking Form</h1>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="room">Room Type:</label>
+        <select id="room" name="room">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>
+//GALLERY page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #004080;
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="site1.jpg" alt="Heritage Site 1">
+        <img src="site2.jpg" alt="Heritage Site 2">
+        <img src="site3.jpg" alt="Heritage Site 3">
+        <!-- Add more images -->
+    </div>
+</body>
+</html>
